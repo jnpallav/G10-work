@@ -20,14 +20,14 @@ class SignUpFragment : Fragment() {
     //private lateinit var loginViewModel: LoginViewModel
     private lateinit var onFragmentListener: OnListener
 
-    private lateinit var db:GtenDatabase
+   // private lateinit var db:GtenDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
        // loginViewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
 
-        db=GtenDatabase.getDatabase(context!!)
+        //db=GtenDatabase.getDatabase(context!!)
     }
 
     override fun onCreateView(
@@ -59,7 +59,7 @@ class SignUpFragment : Fragment() {
     {
         doAsync {
 
-           db.loginDetailsDao().insertLoginDetail(loginDetails)
+           //db.loginDetailsDao().insertLoginDetail(loginDetails)
 
             uiThread {
                 Toast.makeText(context,"Saved",Toast.LENGTH_SHORT).show()
