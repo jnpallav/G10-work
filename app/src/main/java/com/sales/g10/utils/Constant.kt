@@ -17,7 +17,7 @@ object Constant {
     object SubUrl {
         const val GET_IMAGE = "image/{imageId}"
 
-        const val GET_COMMENTS = "{imageId}/comments"
+        const val GET_COMMENTS = "{imageId}/comments/best"
 
         const val SEND_COMMENT = "{imageId}/comment"
     }
